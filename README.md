@@ -3,6 +3,4 @@ I have coded (witch jQuery) a web page where you can turn on/off a lamp, by clic
 
 ![](lamp-switch.gif)
 
-
-
-You can checkout the result: https://lamp.demisstruiksma.com.
+You can try it yourself: https://lamp.demisstruiksma.com.
