@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+	<script src="jquery/jquery-3.3.1.min.js"></script>
+	<meta charset="UTF-8">
+	<title>JQUERY - Opdracht 1</title>
+	<style>
+		body {
+			background-color: black;
+		}
+
+		#container {
+			text-align: center;
+		}
+
+		.switch:hover {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+		<p><img src="images/off.png" class="switch change-switch" /></p>
+		<p><img src="images/lamp_off.png" class="lightbulb change-lamp" /></p>
+	</div>
+
+
+	<!-- plaats hier de jquery codering -->
+
+	<script>
+		$('.switch').on({
+			'click': function() {
+				if ($('.change-switch').attr('src')=="images/off.png"){
+
+					$('.change-switch').attr('src', 'images/on.png');
+					$('.change-lamp').attr('src', 'images/lamp_on.png');
+				} else {
+
+					$('.change-switch').attr('src', 'images/off.png');
+					$('.change-lamp').attr('src', 'images/lamp_off.png');
+				}
+
+			}
+
+		});
+	</script>
+</body>
+
+</html>
